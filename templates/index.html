@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+{% block title %}用户页面{% end %}
+{% block body %}
+{% for i in images %}
+<img src="{{i}}" width="560px" height="800px">
+{% end %}
+{{images}}
+{% end %}

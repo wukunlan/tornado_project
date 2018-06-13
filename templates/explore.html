@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block title %}上传界面{% end %}
+<style>
+    .img{
+        margin: 0px;
+        padding: 0px;
+        position: absolute;
+        left: 50%;
+    }
+</style>
+{% block body%}
+{% for i in images %}
+<div class="img"><img src="{{i}}" width="560px" height="800px"></div>
+{% end %}
+{% end %}
